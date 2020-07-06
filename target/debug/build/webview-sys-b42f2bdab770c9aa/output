@@ -1,0 +1,235 @@
+cargo:rustc-link-lib=windowsapp
+cargo:rustc-link-lib=user32
+cargo:rustc-link-lib=gdi32
+cargo:rustc-link-lib=ole32
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("true")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+CC_x86_64-pc-windows-msvc = None
+CC_x86_64_pc_windows_msvc = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-msvc = None
+CFLAGS_x86_64_pc_windows_msvc = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.25.28610\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "webview.h" "-W4" "/std:c++17" "-DDEBUG" "-DUNICODE" "-FoE:\\devel\\sampsort\\target\\debug\\build\\webview-sys-b42f2bdab770c9aa\\out\\webview_edge.o" "-c" "webview_edge.cpp"
+webview_edge.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.25.28610\include\ppltasks.h(1571): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+webview_edge.cpp(43): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+webview_edge.cpp(212): warning C4100: 'a': unreferenced formal parameter
+webview_edge.cpp(256): warning C4100: 'debug': unreferenced formal parameter
+webview_edge.cpp(314): warning C4458: declaration of 'user_data' hides class member
+webview_edge.cpp(332): note: see declaration of 'webview::webview::user_data'
+webview_edge.cpp(325): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
+webview_edge.cpp(325): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
+webview_edge.cpp(325): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
+webview_edge.cpp(325): warning C4244: 'argument': conversion from 'LONG' to 'float', possible loss of data
+webview_edge.cpp(533): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+webview_edge.cpp(587): warning C4100: 'format': unreferenced formal parameter
+webview_edge.cpp(592): warning C4100: 's': unreferenced formal parameter
+webview_edge.cpp(284): warning C4100: 'args': unreferenced formal parameter
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9014): note: see reference to function template instantiation 'void webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>::operator ()<TSender,TArgs>(const TSender &,const TArgs &) const' being compiled
+        with
+        [
+            TSender=winrt::Windows::Web::UI::IWebViewControl,
+            TArgs=winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9011): note: while compiling class template member function 'int32_t winrt::impl::delegate<T>::type<H>::Invoke(void *,void *) noexcept'
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6523): note: see reference to class template instantiation 'winrt::impl::delegate<T>::type<H>' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6707): note: see reference to function template instantiation 'T winrt::impl::make_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,_Ty>(H &&)' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,
+            _Ty=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>,
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+webview_edge.cpp(284): note: see reference to function template instantiation 'winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>::TypedEventHandler<webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>>(L)' being compiled
+        with
+        [
+            L=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+webview_edge.cpp(282): note: see reference to function template instantiation 'winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>::TypedEventHandler<webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>>(L)' being compiled
+        with
+        [
+            L=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+webview_edge.cpp(284): warning C4100: 'sender': unreferenced formal parameter
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6508): warning C5205: delete of an abstract class 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,H>' that has a non-virtual destructor results in undefined behavior
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9006): note: see declaration of 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,H>'
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6502): note: while compiling class template member function 'uint32_t winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,H>::Release(void) noexcept'
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9007): note: see reference to class template instantiation 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlNavigationStartingEventArgs>,H>' being compiled
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_04b02dc4d8258bdef020ee9648caadb1>
+        ]
+webview_edge.cpp(281): warning C4100: 'sender': unreferenced formal parameter
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9014): note: see reference to function template instantiation 'void webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>::operator ()<TSender,TArgs>(const TSender &,const TArgs &) const' being compiled
+        with
+        [
+            TSender=winrt::Windows::Web::UI::IWebViewControl,
+            TArgs=winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9011): note: while compiling class template member function 'int32_t winrt::impl::delegate<T>::type<H>::Invoke(void *,void *) noexcept'
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6523): note: see reference to class template instantiation 'winrt::impl::delegate<T>::type<H>' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6707): note: see reference to function template instantiation 'T winrt::impl::make_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,_Ty>(H &&)' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,
+            _Ty=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>,
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+webview_edge.cpp(281): note: see reference to function template instantiation 'winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>::TypedEventHandler<webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>>(L)' being compiled
+        with
+        [
+            L=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+webview_edge.cpp(278): note: see reference to function template instantiation 'winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>::TypedEventHandler<webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>>(L)' being compiled
+        with
+        [
+            L=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6508): warning C5205: delete of an abstract class 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,H>' that has a non-virtual destructor results in undefined behavior
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9006): note: see declaration of 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,H>'
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6502): note: while compiling class template member function 'uint32_t winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,H>::Release(void) noexcept'
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9007): note: see reference to class template instantiation 'winrt::impl::implements_delegate<winrt::Windows::Foundation::TypedEventHandler<winrt::Windows::Web::UI::IWebViewControl,winrt::Windows::Web::UI::WebViewControlScriptNotifyEventArgs>,H>' being compiled
+        with
+        [
+            H=webview::webview::{ctor}::<lambda_3b48e330964e707b510ece7c19514184>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6508): warning C5205: delete of an abstract class 'winrt::impl::implements_delegate<winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>,H>' that has a non-virtual destructor results in undefined behavior
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9811): note: see declaration of 'winrt::impl::implements_delegate<winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>,H>'
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6502): note: while compiling class template member function 'uint32_t winrt::impl::implements_delegate<winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>,H>::Release(void) noexcept'
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(9812): note: see reference to class template instantiation 'winrt::impl::implements_delegate<winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>,H>' being compiled
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6523): note: see reference to class template instantiation 'winrt::impl::delegate<T>::type<H>' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::AsyncOperationCompletedHandler<winrt::Windows::Web::UI::Interop::WebViewControl>,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt\winrt/base.h(6905): note: see reference to function template instantiation 'T winrt::impl::make_delegate<winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>,_Ty>(H &&)' being compiled
+        with
+        [
+            T=winrt::Windows::Foundation::AsyncOperationCompletedHandler<winrt::Windows::Web::UI::Interop::WebViewControl>,
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            _Ty=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>,
+            H=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+webview_edge.cpp(268): note: see reference to function template instantiation 'winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>::AsyncOperationCompletedHandler<webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>>(L)' being compiled
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            L=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+webview_edge.cpp(268): note: see reference to function template instantiation 'winrt::Windows::Foundation::AsyncOperationCompletedHandler<TResult>::AsyncOperationCompletedHandler<webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>>(L)' being compiled
+        with
+        [
+            TResult=winrt::Windows::Web::UI::Interop::WebViewControl,
+            L=webview::webview::{ctor}::<lambda_b4d1c9a87a5312ea146e4abfaafb9db8>
+        ]
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.25.28610\\bin\\HostX64\\x64\\lib.exe" "-out:E:\\devel\\sampsort\\target\\debug\\build\\webview-sys-b42f2bdab770c9aa\\out\\libwebview.a" "-nologo" "E:\\devel\\sampsort\\target\\debug\\build\\webview-sys-b42f2bdab770c9aa\\out\\webview_edge.o"
+exit code: 0
+cargo:rustc-link-lib=static=webview
+cargo:rustc-link-search=native=E:\devel\sampsort\target\debug\build\webview-sys-b42f2bdab770c9aa\out
