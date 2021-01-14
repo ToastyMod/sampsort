@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type='text/javascript'>external.invoke('%PACKDIR%C:/Users/')</script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #2f2F2f;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            color: white;
+            flow: vertical;
+            overflow: hidden;
+        }
+
+        #filelist {
+            background-color: #1c1c1c;
+            overflow-y: scroll;
+            color: white;
+            overflow-x: hidden;
+            z-index: -999;
+            position: center;
+        }
+
+
+        #toolbar {
+            background-color: tomato;
+            z-index: -999;
+            position: center;
+            font-size: 150%;
+        }
+
+        .toollink {
+            background-color: transparent;
+            z-index: -999;
+            position: center;
+        }
+        .toollink:hover {
+            background-color: rgba(255, 0, 0, 0.5);
+            border-color: rgba(255, 0, 0, 0.5);
+        }
+
+        .filelink {
+            width: 100%;
+            position: center;
+            background-color: #707070;
+            border-color: deepskyblue;
+            margin: 4px;
+            border-top: #00bfff;
+            border-bottom: #00bfff;
+            padding-bottom: 1px;
+            padding-top: 1px;
+            font-size: 125%;
+            font-family: 'Roboto Mono', monospace;
+            overflow: hidden;
+        }
+
+        .filelink:hover {
+            background-color: #778899;
+        }
+
+        /*view.window {*/
+        /*    x: 600;*/
+        /*    y: 800;*/
+        /*}*/
+
+        #setwin {
+            z-index: 999;
+            position: fixed;
+            width: 100%;
+        }
+        .setbtn {
+            position: center;
+            background-color: tomato;
+        }
+
+        .setbtn:hover {
+            background-color: rgba(253, 150, 75, 1);
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="toolbar">
+    <select id="packtype">
+        <option value="packname">default</option>
+    </select>
+    <i class="toollink" id="addbtn">|+|</i><i class="toollink" id="subbtn">|-|</i>
+</div>
+    <div id='filelist' style="height: 94%">
+    </div>
+<script type="text/tiscript">
+    $(i#addbtn).onClick = function(){
+        view.pick_add_dir();
+    }
+    $(i#subbtn).onClick = function(){
+        view.remove_selected($([id='filelist']));
+    }
+    function add_dir(name,path) {
+        $([id='filelist']).append('<div class=\"filelink\" file=\"'+path+'\"><input class="slctr" type="checkbox">'+name+'</div>');
+    }
+    view.windowResizable = false;
+</script>
+
+</body>
+</html>
